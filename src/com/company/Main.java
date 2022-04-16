@@ -80,6 +80,22 @@ public class Main {
         // int id Java default
         byte byteNewByteValue = (byte)(byteMinByteValue /2);
 
+        // testing
+        byte byteChallange = 100;
+        short shortChallange = 10000;
+        int intChallange = 1000000000;  //2147483647
+        long longChallange = 50000 + ( 10 * (byteChallange + shortChallange + intChallange));
+        System.out.println(" answer " + longChallange);
+        long longChallange2 = 50000 + ( 10 * ((long)byteChallange + (long)shortChallange + (long)intChallange));
+        System.out.println(" answer 2 " + longChallange2);
+        long longChallange3 = 50000L + 10L * ((long)byteChallange + (long)shortChallange + (long)intChallange);
+        System.out.println(" answer 3 " + longChallange2);
+        /*
+        answer 1410216408
+        answer 2 10000151000
+        answer 3 10000151000
+         */
+
 
     }
 }
