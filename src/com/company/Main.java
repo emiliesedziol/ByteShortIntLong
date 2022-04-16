@@ -74,6 +74,11 @@ public class Main {
         2137432324478
          */
 
+        short shortLitteralValue = 32767;
+        int intTotal = (intMinIntValue /2);
+        //                      (byte) is casting in Java
+        // int id Java default
+        byte byteNewByteValue = (byte)(byteMinByteValue /2);
 
 
     }
